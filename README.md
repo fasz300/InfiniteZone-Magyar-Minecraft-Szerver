@@ -1,0 +1,1 @@
+# InfiniteZone-Magyar-Minecraft-Szerver
