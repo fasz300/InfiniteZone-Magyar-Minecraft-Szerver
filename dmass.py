@@ -38,10 +38,10 @@ async def send(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
                 await client.send_message(member, content)
-                await client.say("DM Sent To : {} :white_check_mark:  ".format(member))
+                await client.say("Az InfiniteZone elküldte neki: {} :white_check_mark:  ".format(member))
             except:
                 print("can't")
-                await client.say("DM can't Sent To : {} :x: ".format(member))
+                await client.say("Az InfiniteZone nem tudta elköüldeni : {} :x: ".format(member))
 
 
 client.run("NzI2NjcyNDY2NjY3MTEwNTEw.XvguDQ._x_1bDtIqbe4jx5RNeKemoA4V1o")                
