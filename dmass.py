@@ -41,7 +41,7 @@ async def send(ctx, *, content: str):
                 await client.say("A SkyRox elküldte neki: {} :white_check_mark:  ".format(member))
             except:
                 print("can't")
-                await client.say("A SkyRox nem tudta elköüldeni : {} :x: ".format(member))
+                await client.say("A SkyRox nem tudta elküldeni : {} :x: ".format(member))
 
 
 client.run("Nzc5NjQxMzE0MjQ4NDkxMDI4.X7jfjg.3H9dW9sxkmg8fLp6S0ukLa2DlJ8")                
