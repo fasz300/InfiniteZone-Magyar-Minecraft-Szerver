@@ -17,7 +17,7 @@ async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('InfiniteZone Magyar Minecraft Szerver')
+    print('SkyRox Magyar Minecraft Szerver')
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
@@ -38,10 +38,10 @@ async def send(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
                 await client.send_message(member, content)
-                await client.say("Az InfiniteZone elküldte neki: {} :white_check_mark:  ".format(member))
+                await client.say("A SkyRox elküldte neki: {} :white_check_mark:  ".format(member))
             except:
                 print("can't")
-                await client.say("Az InfiniteZone nem tudta elköüldeni : {} :x: ".format(member))
+                await client.say("A SkyRox nem tudta elköüldeni : {} :x: ".format(member))
 
 
-client.run("NzI2NjcyNDY2NjY3MTEwNTEw.XvguDQ._x_1bDtIqbe4jx5RNeKemoA4V1o")                
+client.run("Nzc5NjQxMzE0MjQ4NDkxMDI4.X7jfjg.3H9dW9sxkmg8fLp6S0ukLa2DlJ8")                
